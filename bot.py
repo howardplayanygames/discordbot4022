@@ -35,4 +35,5 @@ for filename in os.listdir('./cmds'):
        bot.load_extension(f'cmds.{filename[:-3]}')
 
 if __name__ == "__main__":
+   token = os.getenv("TOKEN")
    bot.run(TOKEN)
